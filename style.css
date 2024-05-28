@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
-  display: flex;
-  background-image: repeating-linear-gradient(0deg, rgb(41, 41, 41) 0px, rgb(41, 41, 41) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgb(41, 41, 41) 0px, rgb(41, 41, 41) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, hsl(87,0%,9%),hsl(87,0%,9%));
+  display:flex;
+  background-image: repeating-linear-gradient(0deg, rgb(41, 41, 41) 0px, rgb(41, 41, 41) 1px, transparent 1px, transparent 21px), repeating-linear-gradient(90deg, rgb(41, 41, 41) 0px, rgb(41, 41, 41) 1px, transparent 1px, transparent 21px), linear-gradient(90deg, hsl(87, 0%, 9%), hsl(87, 0%, 9%));
   min-height: 100vh;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 .content h2 {
@@ -22,9 +23,9 @@ body {
 }
 
 .content h2:nth-child(1) {
-  
+
   color: transparent;
-position: absolute;
+  position: absolute;
   -webkit-text-stroke: 0.4px #03a9f4;
 }
 
@@ -34,88 +35,91 @@ position: absolute;
 }
 
 @keyframes animate {
+
   0%,
-  100%{
-    clip-path: polygon(
-      0% 45%,
-      16% 30%,
-      50% 30%,
-      64% 50%,
-      70% 61%,
-      84% 70%,
-      100% 52%,
-      100% 100%,
-      0% 100%
-    );
+  100% {
+    clip-path: polygon(0% 45%,
+        16% 30%,
+        50% 30%,
+        64% 50%,
+        70% 61%,
+        84% 70%,
+        100% 52%,
+        100% 100%,
+        0% 100%);
   }
 
   50% {
-    clip-path: polygon(
-      0% 60%,
-      15% 40%,
-      34% 66%,
-      51% 62%,
-      67% 0%,
-      84% 45%,
-      100% 86%,
-      100% 100%,
-      0% 100%
-    );
+    clip-path: polygon(0% 60%,
+        15% 40%,
+        34% 66%,
+        51% 62%,
+        67% 0%,
+        84% 45%,
+        100% 86%,
+        100% 100%,
+        0% 100%);
   }
 }
 
 .loading-area {
-    margin-top: 20px;
-    margin-inline: auto;
-    width: 40%;
-    justify-content: center;
-    height: 11px;
-    background-color: #ccc;
-    position: sticky;
-    overflow: hidden;
-    border-radius: 5px;
+  margin-top: 20px;
+  margin-inline: auto;
+  width: 40%;
+  justify-content: center;
+  height: 11px;
+  background-color: #ccc;
+  position: sticky;
+  overflow: hidden;
+  border-radius: 5px;
 }
+
 @keyframes wrapper {
-    0% {
-        left: -100%;
-    }
-    100% {
-        left: 100%;
-    }
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
 }
+
 .wrapper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #c4a417;
-    animation: wrapper 4s steps(40) none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #c4a417;
+  animation: wrapper 4s steps(40) none;
 }
-@media (max-width: 300px){
-  .content h2 {
+
+@media (min-width: 320px) {
+  .content{
     color: #fff;
-    font-size: 0.7em;
+    font-size: 0.4em;
     position: relative;
     transform: translate(-0%, -50%);
   }
+
   .loading-area {
     margin-top: 20px;
     margin-inline: auto;
     width: 40%;
     justify-content: center;
-    height: 9px;
+    height: 5.7px;
     background-color: #ccc;
-    position: sticky;
     overflow: hidden;
     border-radius: 5px;
+  }
 }
-}
-@media (min-width: 320px){
-  .content h2 {
+
+@media (min-width: 768px) {
+  .content{
     color: #fff;
-    font-size: 0.8em;
+    font-size: 0.9em;
     position: relative;
     transform: translate(-0%, -50%);
   }
+
   .loading-area {
     margin-top: 20px;
     margin-inline: auto;
@@ -123,15 +127,14 @@ position: absolute;
     justify-content: center;
     height: 6px;
     background-color: #ccc;
-    position: sticky;
     overflow: hidden;
     border-radius: 5px;
+  }
 }
-}
-@media (min-width: 425px){
-  .content h2 {
+@media (min-width: 1024px) {
+  .content{
     color: #fff;
-    font-size: 1em;
+    font-size: 1.1em;
     position: relative;
     transform: translate(-0%, -50%);
   }
@@ -140,49 +143,9 @@ position: absolute;
     margin-inline: auto;
     width: 40%;
     justify-content: center;
-    height: 8px;
+    height: 11px;
     background-color: #ccc;
-    position: sticky;
     overflow: hidden;
     border-radius: 5px;
-}
-}
-
-@media (min-width: 768px){
-  .content h2 {
-    color: #fff;
-    font-size: 1.8em;
-    position: relative;
-    transform: translate(-0%, -50%);
   }
-  .loading-area {
-    margin-top: 20px;
-    margin-inline: auto;
-    width: 40%;
-    justify-content: center;
-    height: 10px;
-    background-color: #ccc;
-    position: sticky;
-    overflow: hidden;
-    border-radius: 5px;
-}
-}
-@media (min-width: 1024px){
-  .content h2 {
-    color: #fff;
-    font-size: 2.4em;
-    position: relative;
-    transform: translate(-0%, -50%);
-  }
-  .loading-area {
-    margin-top: 20px;
-    margin-inline: auto;
-    width: 40%;
-    justify-content: center;
-    height: 12px;
-    background-color: #ccc;
-    position: sticky;
-    overflow: hidden;
-    border-radius: 5px;
-}
 }
