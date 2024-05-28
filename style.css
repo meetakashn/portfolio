@@ -90,6 +90,25 @@ position: absolute;
     background-color: #c4a417;
     animation: wrapper 4s steps(40) none;
 }
+@media (max-width: 300px){
+  .content h2 {
+    color: #fff;
+    font-size: 0.7em;
+    position: relative;
+    transform: translate(-0%, -50%);
+  }
+  .loading-area {
+    margin-top: 20px;
+    margin-inline: auto;
+    width: 40%;
+    justify-content: center;
+    height: 9px;
+    background-color: #ccc;
+    position: sticky;
+    overflow: hidden;
+    border-radius: 5px;
+}
+}
 @media (min-width: 320px){
   .content h2 {
     color: #fff;
