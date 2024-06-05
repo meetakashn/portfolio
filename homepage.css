@@ -32,6 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -40,7 +41,7 @@ body {
     margin: 15px 0;
     justify-content: center;
     position: fixed;
-    top: 0; 
+    top: 0;
 }
 
 .navbar {
@@ -193,13 +194,12 @@ h5 {
 
 }
 
-#instabutton, 
+#instabutton,
 #youbutton,
 #twitterbutton,
 #facebutton,
 #linkidinbutton,
-#githubbutton 
-{
+#githubbutton {
     width: 40px;
     height: auto;
     transition: transform 0.2s;
@@ -217,15 +217,18 @@ h5 {
     transform: scale(1.1);
 }
 
-#facebutton :hover{
+#facebutton :hover {
     transform: scale(1.1);
 }
-#linkidinbutton :hover{
+
+#linkidinbutton :hover {
     transform: scale(1.1);
 }
-#githubbutton :hover{
+
+#githubbutton :hover {
     transform: scale(1.1);
 }
+
 button {
     background: none;
     /* Remove default button background */
@@ -352,186 +355,194 @@ button {
 
 /* media query starts */
 @media ((max-width:320px) or (max-width:375px) or (max-width:425px)) {
-   
-.header {
-    width: 300px;
-    height: auto;
-    display: block;
-}
 
-.navbar ul {
-    justify-content: center;
-    list-style: none;
-  
-}
 
-.navbar ul li {
-    padding: 4px 10px;
-    position: relative;
-}
+    .header {
+        max-width: 1200px;
+        margin: 15px 10px;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+    }
 
-a {
-    font-size: 11px;
-}
+    .navbar {
+        background-color: antiquewhite;
+        border-radius: 20px;
+        padding: 0px;
+        justify-content: center;
+        box-shadow: 1px 2px 1px 1px rgba(255, 0, 0, 0.349);
+        border: 2px solid #ffffff;
+        width: 100%;
+        max-width: 600px;
+    }
 
-.profile-img {
-    width: 21px;
-    height: 21px;
-}
-.container {
-    background: linear-gradient(180deg, rgb(10, 16, 46) 0%, rgb(43, 28, 109) 45%, rgb(201, 204, 170) 100%);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1200px;
-  
-}
 
-h2 {
-    font-size: 10px;
-}
+    .navbar ul {
+        justify-content: center;
+        list-style: none;
 
-h5 {
-    font-size: 10px;
-    justify-content: center;
-    margin-top: 20px;
-}
+    }
 
-.myself {
-    display: flex;
-    font-size: medium;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-}
-.avatar-img {
- 
-    width: 100px;
-    height: 100px;
+    .profile-img {
+        width: 20px;
+        height: 20px;
+    }
 
-}
+    .container {
+        background: linear-gradient(180deg, rgb(10, 16, 46) 0%, rgb(43, 28, 109) 45%, rgb(201, 204, 170) 100%);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
 
-.vwrap,
-.vslide {
-    font-weight: 900;
-    height: 140px;
-    font-size: 10px;
-}
+    }
 
-#sideimg {
-    width: 50%;
-    max-width: 400px;
-    height: auto;
-}
+    h2 {
+        font-size: 10px;
+    }
 
-.hw {
-    margin-top: 20px;
-    flex-direction: row;
+    h5 {
+        font-size: 10px;
+        justify-content: center;
+        margin-top: 20px;
+    }
 
-}
+    .myself {
+        display: flex;
+        font-size: medium;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+    }
 
-#instabutton, 
-#youbutton,
-#twitterbutton,
-#facebutton,
-#linkidinbutton,
-#githubbutton 
-{
-    width: 20px;
-    margin-right: 10px;
-  
-}
+    .avatar-img {
 
-}
-@media (max-width:425px) {
-   
-.header {
-    width: 300px;
-    height: auto;
-    display: block;
-}
+        width: 100px;
+        height: 100px;
 
-.navbar ul {
-    justify-content: center;
-    list-style: none;
-  
-}
+    }
 
-.navbar ul li {
-    padding: 4px 10px;
-    position: relative;
-}
+    .vwrap,
+    .vslide {
+        font-weight: 900;
+        height: 140px;
+        font-size: 10px;
+    }
 
-a {
-    font-size: 11px;
-}
+    #sideimg {
+        width: 700%;
+        max-width: 400px;
+        height: auto;
+    }
 
-.profile-img {
-    width: 21px;
-    height: 21px;
-}
-.container {
-    background: linear-gradient(180deg, rgb(10, 16, 46) 0%, rgb(43, 28, 109) 45%, rgb(201, 204, 170) 100%);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1200px;
-  
-}
+    .hw {
+        margin-top: 20px;
+        flex-direction: row;
 
-h2 {
-    font-size: 10px;
-}
+    }
 
-h5 {
-    font-size: 10px;
-    justify-content: center;
-    margin-top: 20px;
-}
+    #instabutton,
+    #youbutton,
+    #twitterbutton,
+    #facebutton,
+    #linkidinbutton,
+    #githubbutton {
+        width: 20px;
+        margin-right: 10px;
 
-.myself {
-    display: flex;
-    font-size: medium;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-}
-.avatar-img {
- 
-    width: 100px;
-    height: 100px;
+    }
 
 }
 
-.vwrap,
-.vslide {
-    font-weight: 900;
-    height: 140px;
-    font-size: 10px;
-}
+@media (max-width:768px) {
 
-#sideimg {
-    width: 50%;
-    max-width: 400px;
-    height: auto;
-}
+    .header {
+        width: 300px;
+        height: auto;
+    }
 
-.hw {
-    margin-top: 20px;
-    flex-direction: row;
+    .navbar ul {
+        justify-content: center;
+        list-style: none;
 
-}
+    }
 
-#instabutton, 
-#youbutton,
-#twitterbutton,
-#facebutton,
-#linkidinbutton,
-#githubbutton 
-{
-    width: 20px;
-    margin-right: 10px;
-  
-}
+    .navbar ul li {
+        padding: 4px 10px;
+        position: relative;
+    }
+
+    a {
+        font-size: 10px;
+    }
+
+    .profile-img {
+        width: 21px;
+        height: 21px;
+    }
+
+    .container {
+        background: linear-gradient(180deg, rgb(10, 16, 46) 0%, rgb(43, 28, 109) 45%, rgb(201, 204, 170) 100%);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+
+    h5 {
+        font-size: 10px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .myself {
+        display: flex;
+        font-size: medium;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+    }
+
+    .avatar-img {
+
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .vwrap,
+    .vslide {
+        font-weight: 900;
+        height: 140px;
+        font-size: 10px;
+    }
+
+    #sideimg {
+        width: 70%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .hw {
+        margin-top: 20px;
+        flex-direction: row;
+
+    }
+
+    #instabutton,
+    #youbutton,
+    #twitterbutton,
+    #facebutton,
+    #linkidinbutton,
+    #githubbutton {
+        width: 20px;
+        margin-right: 10px;
+
+    }
 
 }
