@@ -34,12 +34,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
    document.getElementById('linkidinbutton').addEventListener('click', onLinkClick);
    document.getElementById('githubbutton').addEventListener('click', onGithubClick);
 });
+document.addEventListener("DOMContentLoaded", function() {
+   const links = document.querySelectorAll(".navbar a");
 
-$(document).ready(function() {
-   // Handle navigation link clicks
-   $('nav a').click(function(e) {
-       e.preventDefault();
-       const target = $(this).attr('href');
-       $('#content').load(target + '.html');
+   links.forEach(link => {
+       link.addEventListener("click", function(event) {
+           event.preventDefault();
+           const targetId = this.getAttribute("href").substring(1);
+           const targetElement = document.getElementById(targetId);
+
+           targetElement.scrollIntoView({
+               behavior: "smooth",
+               block: "center"
+           });
+       });
    });
 });
