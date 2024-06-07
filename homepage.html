@@ -9,19 +9,20 @@
 </head>
 <link rel="stylesheet" href="homepage.css">
 <script src="homepage.js"></script>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
 <body>
     <header class="header">
         <nav class="navbar">
             <ul>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Feedback</a></li>
                 <div>
-                    <img src="profile1.jpg" alt="Profile Image" class="profile-img">
+                    <img src="/images/profile1.jpg" alt="Profile Image" class="profile-img">
                     <div class="avatar-preview">
-                        <img src="profile1.jpg" alt="Profile Image" class="avatar-img">
+                        <img src="/images/profile1.jpg" alt="Profile Image" class="avatar-img">
                     </div>
                 </div>
             </ul>
@@ -29,7 +30,8 @@
         <div id="content"></div>
     </header>
     <main>
-        <div class="container">
+        <!-- about us page -->
+        <div id="about" class="container">
 
             <div class="vwrap">
 
@@ -45,24 +47,142 @@
                     <div class="vslide">Skilled in UI/UX Design - Figma, Photoshop</div>
                 </div>
             </div>
-            <img src="profile1.jpg" alt="" id="sideimg">
+            <img src="/images/profile1.jpg" alt="" id="sideimg">
             <div class="hw">
-                <button id="instabutton"> <img src="instagram.png" alt="rer"
-                        id="instabutton"></button>
-                <button id="youbutton"> <img src="youtube.png" alt="" id="youbutton"></button>
-                <button id="twitterbutton"> <img src="twitter.png" alt="" id="twitterbutton"></button>
-                <button id="facebutton"> <img src="facebook.png" alt="" id="facebutton"></button>
-                <button id="linkidinbutton"> <img src="linkedin.png" alt="" id="linkidinbutton"></button>
-                <button id="githubbutton"> <img src="github.png" alt="" id="githubbutton"></button>
+                <button id="instabutton"> <img src="/images/instagram.png" alt="rer" id="instabutton"></button>
+                <button id="youbutton"> <img src="/images/youtube.png" alt="" id="youbutton"></button>
+                <button id="twitterbutton"> <img src="/images/twitter.png" alt="" id="twitterbutton"></button>
+                <button id="facebutton"> <img src="/images/facebook.png" alt="" id="facebutton"></button>
+                <button id="linkidinbutton"> <img src="/images/linkedin.png" alt="" id="linkidinbutton"></button>
+                <button id="githubbutton"> <img src="/images/github.png" alt="" id="githubbutton"></button>
             </div>
         </div>
-        
+
+        <!-- project  -->
+        <h3 class="projecthead">Projects</h3>
+        <section id="projects" class="section">
+            <div class="projectcontainer">
+                <span class="projectimgtitle">
+                    <img class="imagelogo" src="/images/paisapulselogo.png" alt="paisapulselogo">
+                    <h5 class="projtitle">Paisa Pulse- Financial Tracking App</h5>
+                </span>
+                <p class="projdesc">"Paisa Pulse" is your remaining companion for monetary concord, designed for
+                    individuals seeking an effortless way to track and manipulate their financial records.</p>
+                <p class="projtech"><b>Technology used</b>- Flutter, Dart, Firebase, UI/UX </p>
+                <p class="projpublish"><b>Available on</b>- Amazon App Store, Github, Uptodown </p>
+                <p class="projpublish"><b>View on Amazon Store</b>-<a style="color: aliceblue;" target="/.blank" href="https://www.amazon.com/gp/product/B0D497SNS5">Paisa Pulse</a> </p>
+            </div>
+            <div class="projectcontainer">
+                <span class="projectimgtitle">
+                    <img class="imagelogo" src="/images/letscharge.png" alt="paisapulselogo">
+                    <h5 class="projtitle">Let's Charge - Ev Charger Finder</h5>
+                </span>
+                <p class="projdesc">"Let's Charge" enabling users to effortlessly locate nearby electric vehicle (EV)
+                    charging stations, plan routes, and contribute to sustainable transportation choices.</p>
+                <p class="projtech"><b>Technology used</b>- Flutter, Dart, Firebase, UI/UX, Google Api </p>
+                <p class="projpublish"><b>Available on</b>- Github </p>
+            </div>
+            <div class="projectcontainer">
+                <span class="projectimgtitle">
+                    <img class="imagelogo" src="/images/unitconverter.png" alt="paisapulselogo">
+                    <h5 class="projtitle">Unit Converter - All in one</h5>
+                </span>
+                <p class="projdesc">"Unit converter" Very simple and beautifully designed unit converter with 12 categories
+                    and many different units.</p>
+                <p class="projtech"><b>Technology used</b>- Android Studio, Java </p>
+                <p class="projpublish"><b>Available on</b>- Amazon App Store, Github, Uptodown </p>
+                <p class="projpublish"><b>View on Amazon Store</b>-<a style="color: aliceblue;" target="/.blank" href="https://www.amazon.com/gp/product/B0BZMNC3ZV">Unit Converter</a> </p>
+            </div>
+            <div class="otherprojectcontainer">
+                <span class="otherprojects">
+                    <h5 class="otherprojtitle">Other Projects</h5>
+                </span>
+                <p class="projdesc">PassGuard Pro, Slap Your Friends, Task Master, Tug of War, Tic Tac Toe</p>
+            </div>
+
+
+        </section>
+
+
+        <!-- Skills -->
+
+        <h3 class="projecthead">Skills</h3>
+        <section id="skills" class="sectionskill">
+            <div class="skillcontainer">
+                <h4>&star; Technical Skill
+                    <ul>
+                        <li>Java</li>
+                        <li>Dart</li>
+                        <li>C++</li>
+                        <li>HTML & CSS</li>
+                        <li>Javascript</li>
+                        <li>Python</li>
+                    </ul>
+                </h4>
+            </div>
+            <span class="doubleskillcontainer">
+                <div class="skillcontainer">
+                    <h4>&star; IDE Familiarity
+                        <ul>
+                            <li>Android Studio</li>
+                            <li>Vs Code</li>
+                            <li>Intellij</li>
+                        </ul>
+                </div>
+                <div class="skillcontainer">
+                    <h4>&star; FrameWork
+                        <ul>
+                            <li>Flutter</li>
+                        </ul>
+                </div>
+            </span>
+            <span class="doubleskillcontainer">
+                <div class="skillcontainer">
+                    <h4>&star; Database
+                        <ul>
+                            <li>Firebase</li>
+                            <li>Sql Lite</li>
+                        </ul>
+                    </h4>
+                </div>
+                <div class="skillcontainer">
+                    <h4>&star; Design
+                        <ul>
+                            <li>Adobe Photoshop</li>
+                            <li>Figma</li>
+                        </ul>
+                </div>
+            </span>
+
+            <span>
+                <div class="currentlearningcont">
+                    <h4>&star; Current Learning
+                        <ul>
+                            <li>Web Development</li>
+                            <li>BlockChain</li>
+                        </ul>
+                    </h4>
+                </div>
+            </span>
+
+
+        </section>
     </main>
-    <footer>
-        <div id="scroll-container">
-            <div id="scroll-text">Copyright &copy; 2024, Akash NM<div>
-          </div>
+
+    <!-- Contact -->
+    <h3 class="projecthead">Contact</h3>
+
+    <footer id="contact"class="footercontainer"> 
+        <div class="emailcontainer">
+            <img src="/images/email.png" alt="">
+            <h4>akashmudaliyar2@gmail.com</h4>
+        </div>
+        <div class="contactcontainer">
+            <img src="/images/phone.png" alt="">
+            <h4>+91-8390768844</h4>
+        </div>
     </footer>
+    <div id="scroll-text">Copyright &copy; 2024, Akash NM<div>
 </body>
 
 </html>
