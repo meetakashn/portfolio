@@ -582,225 +582,8 @@ button {
 }
 
 /* media query starts */
-
-@media only screen and (max-width:768px) {
-
-    a {
-        font-size: 09px;
-    }
-
-    .profile-img {
-        width: 21px;
-        height: 21px;
-    }
-
-    .container {
-        background: linear-gradient(180deg, rgb(10, 16, 46) 0%, rgb(43, 28, 109) 45%, rgb(201, 204, 170) 100%);
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        max-width: 1200px;
-
-    }
-
-    h2 {
-        font-size: 10px;
-    }
-
-    h5 {
-        font-size: 10px;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .myself {
-        display: flex;
-        font-size: medium;
-        justify-content: center;
-        color: rgb(255, 255, 255);
-    }
-
-    .avatar-img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .vwrap,
-    .vslide {
-        font-weight: 900;
-        height: 140px;
-        font-size: 13px;
-    }
-
-    #sideimg {
-        width: 70%;
-        max-width: 400px;
-        height: auto;
-    }
-
-    .hw {
-        margin-top: 20px;
-        flex-direction: row;
-
-    }
-
-    #instabutton,
-    #youbutton,
-    #twitterbutton,
-    #facebutton,
-    #linkidinbutton,
-    #githubbutton {
-        width: 20px;
-        margin-right: 10px;
-
-    }
-    .projecthead{font-size: 12px;}
-    .section {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .projectcontainer {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        max-width: 260px;
-        padding-left: 5px;
-        padding-right: 5px;
-        border-radius: 10px;
-    }
-
-    .projectimgtitle {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .imagelogo {
-        width: 15px;
-    }   
-
-    .projdesc {
-        padding-top: 10px;
-        font-size: 07px;
-        color: wheat;
-    }
-
-    .projtech {
-        padding-top: 10px;
-        font-size: 06px;
-        color: wheat;
-    }
-
-    .projtech>b {
-        color: black;
-        background-color: #ffffff;
-    }
-
-    .projpublish {
-        padding-top: 10px;
-        font-size: 06px;
-        color: wheat;
-    }
-
-    .projpublish>b {
-        color: black;
-        background-color: #ffffff;
-    }
-
-    .otherprojectcontainer {
-        align-items: center;
-        width: 100%;
-        max-width: 260px;
-        border-radius: 10px;
-    }
-    .otherprojtitle {
-        font-size: 12px;
-    }
-
-
-    /* Skill */
-
-    .sectionskill {
-        flex-direction: column;
-    }
-
-    .skillcontainer {
-        display: flex;
-        flex-direction: row;
-     
-    }
-
-    .skillcontainer>h4 {
-        font-size: 10px;
-    }
-
-    .skillcontainer>h4>ul>li {
-        font-size: 10px;
-    }
-
-    .currentlearningcont {
-        flex-direction: row;
-    }
-
-    .currentlearningcont>h4 {
-        font-size: 10px;
-    }
-
-    .currentlearningcont>h4>ul>li {
-        font-size: 10px;
-         }
-
-
-    /* down scroll */
-
-    .footercontainer {
-    
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    #scroll-text {
-       
-        font-size: 10px;
-
-    }
-
-    .emailcontainer {
-        flex-direction: row;
-    }
-
-    .emailcontainer>img {
-        width: 15px;
-    }
-
-    .emailcontainer>h4 {
-        font-size: 10px;
-    }
-
-    .contactcontainer {
-        flex-direction: row;
-    }
-
-    .contactcontainer>img {
-        width: 15px;    
-    }
-
-    .contactcontainer>h4 {
-        font-size: 10px;
-    }
-     .doubleskillcontainer{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-     }
-}
-
-
 @media only screen and(max-width:425px) {
-
+    
     .navbar ul {
         justify-content: center;
         list-style: none;
@@ -887,7 +670,7 @@ button {
         display: flex;
         flex-direction: row;
         width: 100%;
-        max-width: 260px;
+        max-width: 250px;
         padding-left: 5px;
         padding-right: 5px;
         border-radius: 10px;
@@ -944,12 +727,13 @@ button {
     /* Skill */
 
     .sectionskill {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: auto;
     }
 
     .skillcontainer {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+    
      
     }
 
@@ -1019,4 +803,213 @@ button {
         flex-direction: row;
      }
 
+}
+
+@media only screen and (max-width:768px) {
+
+    a {
+        font-size: 09px;
+    }
+
+    .profile-img {
+        width: 21px;
+        height: 21px;
+    }
+
+    .container {
+        background: linear-gradient(180deg, rgb(10, 16, 46) 0%, rgb(43, 28, 109) 45%, rgb(201, 204, 170) 100%);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+
+    h5 {
+        font-size: 10px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .myself {
+        display: flex;
+        font-size: medium;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+    }
+
+    .avatar-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .vwrap,
+    .vslide {
+        font-weight: 900;
+        height: 140px;
+        font-size: 13px;
+    }
+
+    #sideimg {
+        width: 70%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .hw {
+        margin-top: 20px;
+        flex-direction: row;
+
+    }
+
+    #instabutton,
+    #youbutton,
+    #twitterbutton,
+    #facebutton,
+    #linkidinbutton,
+    #githubbutton {
+        width: 20px;
+        margin-right: 10px;
+
+    }
+    .projecthead{font-size: 12px;}
+    .section {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectcontainer {
+        display: flex;
+        flex-direction: column;
+        width:auto;
+        max-width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 10px;
+    }
+
+    .projectimgtitle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagelogo {
+        width: 15px;
+    }   
+
+    .projdesc {
+        padding-top: 10px;
+        font-size: 07px;
+        color: wheat;
+    }
+
+    .projtech {
+        padding-top: 10px;
+        font-size: 06px;
+        color: wheat;
+    }
+
+    .projtech>b {
+        color: black;
+        background-color: #ffffff;
+    }
+
+    .projpublish {
+        padding-top: 10px;
+        font-size: 06px;
+        color: wheat;
+    }
+
+    .projpublish>b {
+        color: black;
+        background-color: #ffffff;
+    }
+
+    .otherprojectcontainer {
+        width: auto;
+        border-radius: 10px;
+    }
+    .otherprojtitle {
+        font-size: 12px;
+    }
+
+
+    /* Skill */
+
+    .sectionskill {
+        display: grid;
+        grid-template-columns: auto;
+        width:100%;
+        max-width: auto;
+    }
+    .skillcontainer>h4 {
+        font-size: 10px;
+    }
+
+    .skillcontainer>h4>ul>li {
+        font-size: 10px;
+    }
+
+    .currentlearningcont {
+        flex-direction: row;
+    }
+
+    .currentlearningcont>h4 {
+        font-size: 10px;
+    }
+
+    .currentlearningcont>h4>ul>li {
+        font-size: 10px;
+         }
+
+
+    /* down scroll */
+
+    .footercontainer {
+    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #scroll-text {
+       
+        font-size: 10px;
+
+    }
+
+    .emailcontainer {
+        flex-direction: row;
+    }
+
+    .emailcontainer>img {
+        width: 15px;
+    }
+
+    .emailcontainer>h4 {
+        font-size: 10px;
+    }
+
+    .contactcontainer {
+        flex-direction: row;
+    }
+
+    .contactcontainer>img {
+        width: 15px;    
+    }
+
+    .contactcontainer>h4 {
+        font-size: 10px;
+    }
+     .doubleskillcontainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+     }
 }
